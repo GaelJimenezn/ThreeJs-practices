@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrales 3D</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+          "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header id="topbar">
+      <span class="logo-emoji">📊</span> Visualizador de Integrales 3D
+    </header>
+
+    <div id="container">
+      <aside id="sidebar">
+        <h3>Ejercicios</h3>
+        <button id="btn1">Ejercicio 1</button>
+        <button id="btn2">Ejercicio 2</button>
+        <button id="btn3">Ejercicio 3</button>
+      </aside>
+
+      <main id="viewer">
+        <canvas id="app"></canvas>
+        <section id="info-panel" class="floating-card">
+          <h2 id="info-title"></h2>
+          <div id="info-desc"></div>
+          <div id="info-formula"></div>
+          <div id="info-value"></div>
+          <div id="info-prop"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
